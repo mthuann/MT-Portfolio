@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/* Định dạng chung cho container của nút điều hướng */
+.owl-nav {
+  display: flex;
+  justify-content: space-around; /* Canh giữa hai nút trong container */
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa hai nút */
+  margin-top: 20px !important; /* Khoảng cách từ slider đến nút */
+}
+
+/* Định dạng cho nút điều hướng */
+.owl-prev, .owl-next {
+  width: 30px;
+  height: 30px;
+  background-color: #111111 !important;
+  color: #eaeaea !important;
+	font-weight: 900 !important ;
+	font-size: 18px !important;
+  border-radius: 50%; /* Làm tròn nút */
+  display: flex;
+  justify-content: center; /* Căn giữa icon mũi tên */
+  align-items: center;
+  cursor: pointer;
+  border: none; /* Xóa viền mặc định */
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+}
+
+#home
+{
+	background-image: url("../images/cover1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat
+}
+.br-3 {border-radius: 20px}
+
+/* Hiệu ứng khi hover */
+.owl-prev:hover, .owl-next:hover {
+  background-color: #333333 !important;
+}
+
