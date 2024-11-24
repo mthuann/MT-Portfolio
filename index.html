@@ -15,7 +15,7 @@
 </head>
 
 <body style="padding-top: 40px">
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-lg"> <a href="index.html"><img src="images/Logo mark.jpg" alt="logo-icon" style="width: 100px; height: auto"> </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-lg"> <a href="index.html"><img src="images/logomark.png" alt="logo-icon" style="width: 100px; height: auto"> </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 	    <ul class="navbar-nav mx-auto">
@@ -26,13 +26,13 @@
 			 <li class="nav-item"> <a class="nav-link btn btn-outline-primary my-2 my-sm-0" href="#experience">Experience</a> </li>
 			 <li class="nav-item dropdown"> <a class="nav-link nav-link btn btn-outline-primary my-2 my-sm-0 dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portfolio </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-				<a class="dropdown-item" href="#">Brand Identity</a>
-				<a class="dropdown-item" href="#">POSM Design</a>
-				<a class="dropdown-item" href="#">Art Works</a>
+				<a class="dropdown-item" href="brand identity.html">Brand Identity</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="photography.html">Photography Concept</a>
 	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Web Design</a>
-			  <a class="dropdown-item" href="#">Social Post</a> </div>
-          </li>
+	          <a class="dropdown-item" href="index.html">Web Design</a>
+			   </div>
+          </li><li class="nav-item"> <a class="nav-link btn btn-outline-primary my-2 my-sm-0" href="booking.html">Book now</a> </li>
 			<li class="nav-item"> <a class="nav-link btn btn-outline-primary my-2 my-sm-0" href="#goal">Goals</a> </li>
 	     
 	      <li class="nav-item"> <a class="nav-link disabled" href="#">Available Now</a> </li>
@@ -55,9 +55,36 @@
           <h1 class="display-3 wow fadeInUp">
             <span id="WELCOME_TO_MY_WORLD">DESIGNS THAT SPEAK<br>VISUALS THAT LAST</span>
           </h1>
-          <button class="btn btn-outline-success my-2 my-sm-0 wow fadeInUp" 
-                  data-wow-delay="0.5s" 
-                  type="button">Book Now</button>
+         
+<!-- Nút Book Now -->
+<button id="bookNowBtn" class="btn btn-outline-success my-2 my-sm-0 wow fadeInUp" 
+                  data-wow-delay="0.5s">Book Now</button>
+
+<!-- Modal cho form -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Register here</h1>
+    <form id="bookingForm" class="my-2">
+      <p for="name">Name:</p>
+      <input class="form-control" type="text" id="name" name="name" required>
+
+      <p for="phone">Phone:</p>
+      <input class="form-control mr-sm-2" type="text" id="phone" name="phone" required>
+
+      <p for="category">Project Type:</p>
+      <select id="category" name="category" class="btn btn-outline-success display-3 py-1 px-2 mx-auto" required>
+        <option value="danhmuc1">2D Design</option>
+        <option value="danhmuc2">Brand Identity</option>
+        <option value="danhmuc3">WEB Design</option>
+		<option value="danhmuc4">POSM Design</option>
+      </select><br><br>
+
+      <button type="button" class="btn btn-secondary right-bottom" id="submitBtn">Confirm</button>
+    </form>
+  </div>
+</div>
+			
           <p class="wow fadeInUp" data-wow-delay="0.5s">
             Emphasizes the power of design to convey ideas and emotions. <br>
             This slogan highlights creating lasting impressions through thoughtful, captivating visuals.
@@ -71,21 +98,21 @@
 </header>
 <section id="about" >
 	<div class="container">
-		<div class="row ">
+		<div class="row">
 			<div class="col-12 col-md-6 col-lg-6 my-auto wow fadeInLeft" data-wow-delay="0.5s">
 				<h3><span class="element"></span></h3>
 				<h2 class="display-5">Graphic Designer + <br>Web Developer</h2>
 				<p>"As a graphic designer, I transform ideas into impactful visuals that communicate and captivate. With expertise in branding, digital media, and print, I create designs that resonate and leave a lasting impression. Let’s collaborate to bring your vision to life."</p>
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-pinterest"></a>
+				<a href="https://www.facebook.com/mi.thuannn/" target="blank" class="fa fa-facebook"></a>
+				<a href="https://www.linkedin.com/in/dao-minh-thuan-b464272b6/" target="blank" class="fa fa-linkedin"></a>
+				<a href="https://www.instagram.com/m.thuann/" target="blank" class="fa fa-instagram"></a>
+				<a href="https://www.pinterest.com/thuankunkute150/" target="blank" class="fa fa-pinterest"></a>
 				</div>			
 			<div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay="1s"><img src="images/hero.jpg" alt="" class="img-fluid d-block mx-auto"></div></div>
 		</div>
 	
 	<div class="container pt-5"> <div class="row">
-		<div class="col-12 col-md-6 col-lg-6 wow fadeInLeft" data-wow-delay="1s"><img src="images/hero.jpg" alt="" class="img-fluid d-block mx-auto"></div>
+		<div class="col-12 col-md-6 col-lg-6 wow fadeInLeft" data-wow-delay="1s"><img src="images/header2.jpg" alt="" class="img-fluid d-block mx-auto"></div>
 		<div class="col-12 col-md-6 col-lg-6 my-auto  py-4 wow fadeInRight" data-wow-delay="0.5s"><h2 class="display-5">Why choose me?</h2>
 				<p>I spend a lot of time researching and gathering information, always prioritizing creativity and working in my own way. I’m friendly, responsible, adaptable, and full of enthusiasm. I constantly seek new challenges to develop my skills and broaden my experience in various fields.</p>
 	  </div>	</div> </div>
@@ -162,7 +189,8 @@
 			<div class="col-6 col-md-4 col-lg-2 wow fadeInRight" data-wow-delay="1.5s"><img src="images/DW1.jpg" alt="SW6" class="img-fluid d-block mx-auto"></div>
 		</div></div>
 		</section>
-<section id="experience"><div class="container"><div class="row">
+<section id="experience">
+	<div class="container"><div class="row">
 		<div class="col-12 pb-4"><img src="images/Logo mark.jpg" class="img-fluid d-block mx-auto my-3" alt="special images"></div>
 		
 		<div class="">
@@ -175,11 +203,10 @@
       <div class="col-6 wow fadeInRight" data-wow-delay="0.5s">
         <h6>Outerity - Fearow</h6>
 		  	<h3>Media and Design Team Leader</h3>
-				<h5>April, 2021 - April, 2022</h5><button class="btn btn-outline-success py-1" type="button">View more</button>
-       <p>At Outerity, I handled media production for campaigns and events on Facebook, Instagram, and TikTok.
-<br>At Fearow, I managed the brand, led product design, and executed advertising campaigns, contributing to 4 billion VND in revenue (February 2022).</p>
-		  <a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-instagram"></a>
+				<h5>April, 2021 - April, 2022</h5><a href="experience.html"><button class="btn btn-outline-success py-1" type="button">View more</button></a>
+       <p>I managed the brand, led product design, and executed advertising campaigns, contributing to 4 billion VND in revenue (February 2022).</p>
+		  <a href="https://www.facebook.com/outerity" class="fa fa-facebook" target="blank"></a>
+				<a href="https://www.instagram.com/fearow.sg/" class="fa fa-instagram" target="blank"></a>
 		      </div>
     </div>
     <!--path between 1-2-->
@@ -199,10 +226,10 @@
       <div class="col-6 text-right wow fadeInLeft" data-wow-delay="0.5s">
 		<h6>Legato Music Academy</h6>
 		<h3>Marketing Manager</h3>
-		<h5>April, 2020 - April, 2021</h5><button class="btn btn-outline-success py-1" type="button">View more</button>
-		<p>In this role, I took full responsibility for driving the company’s revenue growth while managing brand visuals, media content, and educational videos. I also proactively proposed advertising strategies and effective approaches to reach potential customers. Notably, I resolved the company’s critical challenge of "how to retain customers and encourage repeat business."</p>
-		  <a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-youtube"></a>
+		<h5>April, 2020 - April, 2021</h5><a href="experience.html"><button class="btn btn-outline-success py-1" type="button">View more</button></a>
+		<p>In this role, I took full responsibility for driving the company’s revenue growth while managing brand visuals, media content, and educational videos.</p>
+		  <a href="https://www.facebook.com/hocvienlegatogroup" class="fa fa-facebook"  target="blank" ></a>
+		<a href="https://www.youtube.com/channel/UCYpLrjSxQPVfrYi--tSKVeg" class="fa fa-youtube" target="blank"></a>
       </div>
       <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center wow fadeInRight" data-wow-delay="0.3s">
         <div class="circle font-weight-bold">2</div>
@@ -226,9 +253,9 @@
         <div class="circle font-weight-bold">3</div>
       </div>
       <div class="col-6 wow fadeInRight" data-wow-delay="0.5s">
-     	<h3>Freelance Photographer</h3>
-		<h5>April, 2019 - Now</h5><button class="btn btn-outline-success py-1" type="button">View more</button>
-		<p>- Communicate with clients, brainstorm ideas, sketch concepts, present, and finalize images. <br>- Design social media posts, posters, business cards, flyers, uniforms, and 2D graphics for fashion products. Build brand imagery and moodboards.</p>
+     	<h3>Freelance Photographer & Designer</h3>
+		<h5>April, 2019 - Now</h5><a href="experience.html"><button class="btn btn-outline-success py-1" type="button">View more</button></a>
+		<p>Talk to clients, brainstorm ideas, sketch concepts, present, and finalize images, social media posts, posters, business cards, flyers, uniforms, and 2D graphics for fashion products. Build brand imagery and moodboards.</p>
       </div>
     </div>
   </div>
@@ -336,16 +363,16 @@
       </div>
     </div>
   </div></section>
-<section id="goal">
+<section id="goal" class="pb-5">
 	<div class="container">
       <div class="row">
-        <div class="col-12 col-md-8 col-lg-8 mx-auto text-center text-left mx-auto wow fadeInDown"> 
+        <div class="col-12 col-md-8 col-lg-8 mx-auto text-center text-left mx-auto wow fadeInDown" data-wow-delay="0.3s"> 
           <h1 class="text-center">Development Goals</h1>
 			<p>Enhance professional skills, develop a unique style, and build project management abilities, aiming for leadership roles in design.</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.5s">
           <div class="card bg-dark text-center text-light border-light" >
             <div class="card-body p-4">
               <h3>Senior Designer</h3>
@@ -359,7 +386,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.5s">
           <div class="card bg-dark text-center text-light border-light">
             <div class="card-body p-4">
               <h3>Project Manager</h3>
@@ -373,7 +400,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 p-3 wow fadeInUp" data-wow-delay="0.5s">
           <div class="card bg-dark text-center text-light border-light">
             <div class="card-body p-4">
               <h3>Art Director</h3>
@@ -389,9 +416,26 @@
         </div>
 	  </div>
     </div>
+	<div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-12 col-12" style="">
+          <div class="alert alert-primary wow fadeInLeft my-3 py-4 border-dark" data-wow-delay="0.7s" role="alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4 class="alert-heading">Well done!</h4>
+            <p class="mb-0">"The brand identity service is very professional! The designer created a unique and on-brand identity that aligns perfectly with our vision, making the brand easily recognizable and receiving positive feedback from customers."</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="alert alert-primary wow fadeInRight my-3 py-4 border-dark" data-wow-delay="0.7s" role="alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h4 class="alert-heading">Good job!</h4>
+            <p class="mb-0">"The event booth design was impressive and eye-catching. The layout was well-organized to optimize space and enhance the attendee experience. This design received a lot of compliments!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
-	
-	
+
 	
 	
 <footer>
@@ -420,8 +464,7 @@
         </div>
       </div>
     </div></div></footer>
-	
-	<script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");
     const headerHeight = document.querySelector("header").offsetHeight;
@@ -435,7 +478,7 @@
     });
   });
 </script>
-	<script> $(document).ready(function () {
+<script> $(document).ready(function () {
   $('#customCarousel').carousel({
     interval: 2000 // Thời gian giữa các slide là 2 giây
   });
@@ -455,7 +498,7 @@
 </script>
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-	<script>
+<script>
   $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
       center:true,
@@ -480,6 +523,51 @@
   });
 		  
 </script>
+<script>
+  // Mở form khi nhấp vào nút Book Now
+  document.getElementById('bookNowBtn').onclick = function() {
+    const modal = document.getElementById('myModal');
+    modal.classList.add("show");
+  };
 
+  // Đóng form khi nhấp vào nút đóng
+  document.getElementsByClassName('close')[0].onclick = function() {
+    const modal = document.getElementById('myModal');
+    modal.classList.remove("show");
+  };
+
+  // Đóng form khi nhấp ra ngoài modal
+  window.onclick = function(event) {
+    const modal = document.getElementById('myModal');
+    if (event.target == modal) {
+      modal.classList.remove("show");
+    }
+  };
+
+  // Xử lý khi nhấn nút xác nhận
+  document.getElementById('submitBtn').onclick = function() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const category = document.getElementById('category').value;
+
+    // Gửi dữ liệu đến người lập trình web
+    fetch('duong_dan_xu_ly_cua_ban', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, phone, category })
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert("Scheduled successfully!");
+      document.getElementById('myModal').classList.remove("show");
+    })
+    .catch(error => {
+      console.error("Lỗi:", error);
+      alert("An error occurred while registering..");
+    });
+  };
+</script>
 </body>
 </html>

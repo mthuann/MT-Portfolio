@@ -148,6 +148,8 @@ body {
 #experience a:hover{color:#111111}
 #project a{text-decoration: none; color: #111111;font-size: 20px; margin: 0; padding: 0 5px}
 #project a:hover{color:#8D8D8D}
+#ex-detail a{text-decoration: none; color: #BBBBBB;font-size: 20px; margin: 0; padding: 0 5px}
+#ex-detail a:hover{color:#111111}
 
 footer{margin-bottom: -35px;}
 
@@ -5467,8 +5469,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
+  color: #111111;
+  background-color: #FFFFFF;
   border-color: #b8daff;
 }
 
